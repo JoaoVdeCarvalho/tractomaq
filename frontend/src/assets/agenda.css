@@ -1,0 +1,208 @@
+.agenda-container {
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.agenda-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.agenda-header h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/*FILTROS*/
+.agenda-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.agenda-filters input,
+.agenda-filters select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #cfcfcf;
+  font-size: 14px;
+}
+
+/*SEÇÕES*/
+.agenda-section-title {
+  background: #7a7a7a;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+/* Dia */
+.agenda-day-box {
+  background: #dcdcdc;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/*CARDS*/
+.agenda-card {
+  background: white;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-top: 10px;
+  border-left: 6px solid #b5b5b5;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.12);
+}
+
+.agenda-card-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 12px;
+}
+
+.agenda-card-content div strong {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+/* Rodapé do card */
+.agenda-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*STATUS*/
+.agenda-status {
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.status-pendente {
+  background: #fff7c2;
+  color: #8a7a00;
+}
+
+.status-concluido {
+  background: #b4f7bc;
+  color: #006b1f;
+}
+
+.status-pagamento {
+  background: #ffb3b3;
+  color: #a40000;
+}
+
+/*AÇÕES*/
+.agenda-actions {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.agenda-actions span {
+  cursor: pointer;
+  color: #333;
+  font-weight: 600;
+}
+
+.agenda-actions span:hover {
+  text-decoration: underline;
+}
+
+/*BOTÃO NOVO*/
+.btn-novo {
+  background: #8a0f0f;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-novo:hover {
+  background: #6e0b0b;
+}
+
+/* ======================
+   MODAL
+====================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 540px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+}
+
+.modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.modal-form input,
+.modal-form select,
+.modal-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.btn-cancel {
+  background: #bfbfbf;
+  color: black;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background: #c00000;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-save {
+  background: #8a0f0f;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}

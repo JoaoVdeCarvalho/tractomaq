@@ -1,0 +1,161 @@
+/* Tela inteira */
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  background: #222;              /* fundo escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card principal */
+.login-wrapper {
+  width: 850px;
+  height: 450px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* duas metades */
+}
+
+/* Painéis com formulários */
+.panel {
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  z-index: 1; /* abaixo do overlay, mas visíveis no lado ativo */
+}
+
+.panel h2 {
+  margin: 0;
+}
+
+.panel p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.panel input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f1f1f1;
+}
+
+.btn-red {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #b30000;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-red:hover {
+  background: #8e0000;
+}
+
+/* Transição suave entre os painéis */
+.panel-signup,
+.panel-login {
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+/* Estado inicial: cadastro visível, login escondido */
+.panel-login {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(40px);
+}
+
+/* Quando entra em modo login */
+.login-mode .panel-signup {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-40px);
+}
+
+.login-mode .panel-login {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateX(0);
+}
+
+/* QUADRADO VERMELHO DESLIZANTE */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: #b30000;
+  color: #fff;
+
+  /* Centralização perfeita */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 0;                /* remove empurrão lateral */
+  transition: transform 0.45s ease;
+  z-index: 2;
+}
+
+.overlay-content {
+  width: 100%;               /* usa toda a área */
+  padding: 40px;             /* padding agora está aqui */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;                 /* espaço uniforme */
+}
+
+
+.overlay h2 {
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Botão branco dentro do quadrado vermelho */
+.btn-outline {
+  margin-top: 18px;
+  padding: 10px 26px;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* Quando entra em modo login, o quadrado desliza pro lado esquerdo */
+.login-mode .overlay {
+  transform: translateX(-100%);
+}
+
+.panel input {
+  color: #000 !important;      /* texto preto */
+}
+
+.panel input::placeholder {
+  color: #777 !important;      /* placeholder cinza */
+}

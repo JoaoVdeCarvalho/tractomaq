@@ -1,0 +1,95 @@
+.dashboard-wrapper {
+  padding: 20px 30px;
+}
+
+.titulo {
+  margin-bottom: 15px;
+}
+
+/* CARDS DO TOPO */
+.cards-linha {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card p {
+  margin: 0;
+  color: #555;
+}
+
+.card h3 {
+  margin: 5px 0 0;
+  font-size: 26px;
+}
+
+.card.fat {
+  background: #B7FFB7;
+}
+
+/* GRÁFICO */
+.grafico-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.select-grafico {
+  margin-bottom: 15px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.grafico-box {
+  width: 50%;
+  min-width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+/* LISTAS */
+.listas-container {
+  display: flex;
+  gap: 30px;
+}
+
+.lista {
+  flex: 1;
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.linha-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.linha-item span {
+  display: block;
+  color: #777;
+}
+
+.subtitulo {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.grafico-container + .grafico-container {
+  margin-top: 50px;
+}
+

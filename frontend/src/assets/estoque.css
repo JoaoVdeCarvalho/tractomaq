@@ -1,0 +1,117 @@
+.estoque-container {
+  padding: 20px;
+}
+
+/* CABEÇALHO */
+.estoque-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.btn-add {
+  background: #8a0f0f;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-add:hover {
+  background: #6e0c0c;
+}
+
+/* FILTROS */
+.filtros-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filtro {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 150px;
+}
+
+/* TABELA */
+.estoque-table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+}
+
+.estoque-table th {
+  background: #e0e0e0;
+  padding: 10px;
+  text-align: left;
+}
+
+.estoque-table td {
+  padding: 9px;
+  border-bottom: 1px solid #eee;
+}
+
+.acoes-col {
+  display: flex;
+  gap: 12px;
+}
+
+.icon-btn {
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.8;
+}
+.icon-btn:hover {
+  opacity: 1;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  width: 450px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.modal-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.btn-save {
+  background: #8a0f0f;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background: #aaa;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}

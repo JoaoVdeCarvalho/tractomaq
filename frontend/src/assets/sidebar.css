@@ -1,0 +1,40 @@
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background: #a60000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;    /* espaçamento inicial */
+}
+
+.sidebar .logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 40px;  /* distância para o menu */
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.menu-btn {
+  background-color: white;
+  padding: 12px 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  color: #b60000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.03);
+}
